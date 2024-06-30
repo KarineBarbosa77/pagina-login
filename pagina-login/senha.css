@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #6B21F8, #AB90DD);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 10px; /* Espaçamento interno */
+    z-index: 1000; /* Z-index opcional para garantir que o cabeçalho esteja acima de outros elementos */
+}
+
+
+.logo img {
+    width: 150px; /* Largura da imagem (ajuste conforme necessário) */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-top: 10px;
+}
+
+.container {
+    width: 560px;
+    height: 570px; /* Garante que o container tenha pelo menos a altura da tela */
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    position: relative; /* Define o posicionamento relativo para o container */
+}
+
+form {
+    padding: 80px 80px; 
+}
+
+.titulo {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+.titulo2{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.campo{
+    margin-top: -14px;
+}
+.senha {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.entryarea {
+    position: relative;
+    margin-bottom: 32px;
+   
+}
+
+.entryarea p {
+    position: absolute;
+    top: -24px; /* Ajuste conforme necessário para posicionar acima do label */
+    left: 3px; /* Ajuste conforme necessário para posicionar à esquerda do input */
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #666;
+}
+
+
+input {
+    width: 100%;
+    outline: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: #ffffff;
+}
+
+.entryarea {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.condicao {
+    font-family: sans-serif;
+    margin-top: -24px;
+    margin-bottom: 18px;
+    float: left;
+    text-align: left;
+}
+
+.condicao p{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.condicao ul {
+    list-style-type: none; /* Remove os bullets (marcadores) da lista */
+    padding: 0; /* Remove o preenchimento interno padrão da lista */
+}
+
+.condicao ul li {
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda para alinhar com o texto */
+    text-indent: -20px; /* Move o texto para a esquerda para alinhar com o restante do conteúdo */
+    font-size: 12px;
+
+}
+
+/**/
+input:focus {
+    border-color: blue;
+}
+
+.labelline {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    color: #aaa;
+    transition: top 0.5s ease, font-size 0.3s ease, color 0.3s ease;
+    pointer-events: none;
+}
+
+
+
+button {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: blue;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    z-index: 1000; /* Garante que o botão esteja acima dos outros elementos */
+}
+
+
+
+button:hover {
+    background-color: rgb(17, 17, 123);
+}
+
+
+
+.error {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: red; /* Cor vermelha para mensagens de erro */
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-align:justify; /* Justificar o texto */
+  }

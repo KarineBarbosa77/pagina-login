@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir senha</title>
+    <link rel="stylesheet" href="senha.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Helius Starship">
+        </div>
+    </header>
+
+    <div class="container">
+        <p class="titulo">Redefinir sua senha</p>
+        <p class="titulo2">Preencha os campos abaixo</p>
+
+        <form id="passwordForm">
+            <div class="campo">
+                <div class="entryarea">
+                    <p>Digite sua nova senha</p>
+                    <label for="newPassword" class="labelline">************</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                
+                <div class="entryarea">
+                    <p>Digite sua nova senha</p>
+                    <label for="confirmPassword" class="labelline">************</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+            </div>
+            
+            <Div class="condicao">
+                <p>A senha deve conter</p>
+                <ul>
+                    <li>Ao menos 8 caracteres</li>
+                    <li>Uma letra Maiúscula</li>
+                    <li>Uma letra  Minúscula</li>
+                    <li>Um número</li>
+                </ul>
+            </Div>
+
+          <!--  <div id="passwordMessage" class="message"></div> -->
+
+          <div id="passwordConditions">
+            <p id="uppercaseError" class="error" style="display: none;">A senha deve conter pelo menos uma letra maiúscula.</p>
+            <p id="lowercaseError" class="error" style="display: none;">A senha deve conter pelo menos uma letra minúscula.</p>
+            <p id="numberError" class="error" style="display: none;">A senha deve conter pelo menos um número.</p>
+            <p id="matchError" class="error" style="display: none;">As senhas digitadas não coincidem.</p>
+          </div>
+
+        <div id="errorMessages"></div><!-- Container para exibir mensagens de erro -->
+        <button type="button" onclick="validatePassword()">Redefinir Senha</button>
+
+                 
+
+        </form>
+    </div>
+
+    <script src="senha.js"></script>
+</body>
+</html>
